@@ -149,7 +149,7 @@ app.get('/api/products/:id', async (req, res) => {
 // Inicia servidor mesmo sem banco
 initDb().finally(() => {
   app.listen(PORT, '0.0.0.0', () => {
-    console.log(API rodando na porta ${PORT});
+    console.log(`API rodando na porta ${PORT}`);
   });
 });
  
